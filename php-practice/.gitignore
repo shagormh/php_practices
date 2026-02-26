@@ -1,0 +1,67 @@
+# PHP .gitignore
+
+# ── Dependencies ──────────────────────────────────────────
+/vendor/
+/node_modules/
+
+# ── Composer ──────────────────────────────────────────────
+composer.phar
+composer.lock   # only exclude if library; keep if app
+
+# ── Environment & Secrets ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+
+# ── Cache ─────────────────────────────────────────────────
+/storage/cache/
+/storage/sessions/
+/bootstrap/cache/
+/tmp/
+*.cache
+
+# ── Logs ──────────────────────────────────────────────────
+/storage/logs/
+*.log
+error.log
+access.log
+
+# ── Uploads ───────────────────────────────────────────────
+/storage/uploads/
+/public/uploads/
+
+# ── Database ──────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+
+# ── IDE / Editor ──────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Build / Distribution ──────────────────────────────────
+/dist/
+/build/
+*.zip
+*.tar.gz
+
+# ── PHPUnit ───────────────────────────────────────────────
+/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# ── PHP-CS-Fixer ──────────────────────────────────────────
+.php-cs-fixer.cache
+.php_cs.cache
+
+# ── OS / System ───────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
